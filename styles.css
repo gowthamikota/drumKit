@@ -1,0 +1,80 @@
+
+body {
+  background: linear-gradient(135deg, #1E2A38, #2D3E50);
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #E8F1F2;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+
+footer {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  color: #E8F1F2;
+  position: fixed;
+  bottom: 20px;
+}
+
+/* Drum button container */
+.set {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.drum {
+  border: 3px solid #34495E;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #34495E;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.drum:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), -4px -4px 10px rgba(255, 255, 255, 0.4);
+}
+
+.drum:active {
+  transform: translateY(2px);
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.15), inset -3px -3px 6px rgba(255, 255, 255, 0.5);
+  background-color: #E74C3C;
+  color: #ffffff;
+}
+
+.w { background-image: url(./images/tom1.png); background-size: cover; }
+.a { background-image: url(./images/tom2.png); background-size: cover; }
+.s { background-image: url(./images/tom3.png); background-size: cover; }
+.d { background-image: url(./images/tom4.png); background-size: cover; }
+.j { background-image: url(./images/snare.png); background-size: cover; }
+.k { background-image: url(./images/crash.png); background-size: cover; }
+.l { background-image: url(./images/kick.png); background-size: cover; }
